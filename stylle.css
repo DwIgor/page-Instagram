@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagramCompleto {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagramFotoIphone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagramFotoIphone img {
+    height: 50rem;
+}
+
+.instagramConteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.blocoConteudoIgual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.blocoConteudoIgual:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagramLogo {
+    height: 3rem;
+}
+
+.fotoDePerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fotoDePerfil img { 
+    height: 6rem;
+}
+
+.instagramLogin {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagramLogout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.contaNegada {
+    color: rgb(160, 160, 160);
+}
+
+.linkContaNegada {
+    color: #0095f6;
+}
+
+.baixeAplicativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.linksParaBaixar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.linkApp {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.linkApp:nth-child(1) {
+    background-image: url('images/botaoApple.png');
+}
+
+.linkApp:nth-child(2) {
+    background-image: url('images/botaoGoogle.png');
+}
+
+
+@media screen and (max-width: 1024px) {
+    .instagramCompleto {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagramCompleto {
+        width: 90%;
+    }
+
+    .instagramFotoIphone {
+        display: none;
+    }
+
+    .instagramConteudo {
+        width: 100%;
+    }
+
+    .blocoConteudoIgual {
+        border: none;
+    }
+
+}
